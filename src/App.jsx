@@ -17,10 +17,12 @@ function PokemonSearch() {
   };
 
   return (
-    <div className="p-6 max-w-sm mx-auto bg-gray-600 rounded-xl shadow-md flex flex-col items-center space-y-10">
+    
+    <div className="p-6 mt-4 max-w-sm mx-auto bg-gray-600 rounded-xl shadow-md flex flex-col items-center space-y-10">
+      <h1 className='text-3xl text-slate-100'>POKE-SEARCH</h1>
       <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
-        <input className='bg-gray-400 p-2' type="text" value={search} onChange={handleChange} placeholder="Enter Pokemon name" />
-        <button className='text-blue-400 bg-black p-2' type="submit">Search</button>
+        <input className='bg-gray-400 p-2 rounded-lg  ' type="text" value={search} onChange={handleChange} placeholder="Enter Pokemon name" />
+        <button className='text-blue-400 bg-black p-2 rounded-lg' type="submit">Search</button>
       </form>
       {pokemon && (
         <div className='text-slate-100 flex flex-row justify-center items-center space-x-4'>
