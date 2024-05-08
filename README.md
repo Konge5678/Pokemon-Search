@@ -25,3 +25,6 @@ When a user enters a Pokemon name and clicks the "Search" button, the applicatio
 If the user enters a name that does not correspond to a Pokemon, an error message is displayed under the search bar.
 
 The application is styled with Tailwind CSS, and the Pokemon font is imported from a CDN.
+![Image Description](public/Poke-Search1.png) ![Image Description](public/Poke-Search3.png)
+
+![Image Description](public/Poke-Search2.png)
