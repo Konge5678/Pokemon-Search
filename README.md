@@ -32,6 +32,6 @@ The application is styled with Tailwind CSS, and the Pokemon font is imported fr
   </div>
   <div>
     <img src="public/Poke-Search2.png" alt="Poke-Search2">
-    <img src="public/Poke-Search2.png" alt="Poke-Search4">
+    <img src="public/Poke-Search4.png" alt="Poke-Search4">
   </div>
 </div>
