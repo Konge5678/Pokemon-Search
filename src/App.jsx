@@ -19,7 +19,7 @@ function PokemonSearch() {
   return (
     
   <div className="p-6 mt-4 max-w-sm mx-auto bg-gray-600 rounded-xl shadow-md flex flex-col items-center space-y-8 text-left">
-    <h1 className='text-3xl text-slate-100'>POKE-SEARCH</h1>
+    <h1 className='text-3xl text-yellow-400 font-Pokemon'>POKE-SEARCH</h1>
     <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
       <input className='bg-gray-400 p-2 rounded-lg' type="text" value={search} onChange={handleChange} placeholder="Enter Pokemon name" />
       <button className='text-blue-400 bg-black p-2 rounded-lg' type="submit">Search</button>
@@ -37,11 +37,11 @@ function PokemonSearch() {
               <img className="bg-gray-300 w-24 h-24 object-cover" src={pokemon.sprites.front_default} alt={pokemon.name} />  
             </div>
           </div>
-          <div className='text-green-300 flex flex-col items-start space-y-2 '>
+          <div className='flex flex-col items-start space-y-2 '>
             <h2 className="">Moves: </h2>
             <div className="grid grid-cols-2 gap-4 text-left">
               {pokemon.moves.slice(0, 4).map((move, index) => (
-                <p key={index}>{move.move.name}</p>
+                <p className='bg-black rounded-lg p-2' key={index}>{move.move.name}</p>
               ))}
             </div>  
           </div>
